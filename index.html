@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZORP ERP</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsividade.css">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+
+    <!--Botão voltar ao topo-->
+    <div id="backToTop" class="fixed-button">
+        <i class="bi bi-chevron-up"></i>
+    </div>
+
+    <!--Botão WhatsApp-->
+    <div id="whatsappButton" class="fixed-button">
+        <i class="bi bi-whatsapp"></i>
+    </div>
+
+    <!--Container Geral-->
+    <div class="container">
+
+        <!--Header-->
+        <header class="header">
+            <div class="logo">
+                <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+            </div>
+            <div class="menu">
+                <label class="hamburger">
+                    <input type="checkbox" id="menuToggle">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </div>
+            <div class="menu-aberto">
+                <nav class="nav-menu">
+                    <a href="#inicio">INÍCIO</a>
+                    <a href="#LOGIN">FAZER LOGIN</a>
+                    <a href="#cadastro">CADASTRAR</a>
+                    <a href="#contato">CONTATO</a>
+                </nav>
+            </div>
+        </header>
+        <!--Fim Header-->
+
+        <!--Início-->
+        <main id="inicio" class="inicio">
+            <div class="container-inicio">
+                <div class="conteudo-inicio" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="titulo-inicio">
+                        <h1>Zorp ERP</h1>
+                        <h1 class="destaque-inicio">Enterprise resource planning</h1>
+                    </div>
+                    <div class="paragrafo-inicio" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+    
+ 
+                        <div class="paragrafo-inicio" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <p>A Zorp é uma solução ERP inovadora, projetada para otimizar a gestão da sua empresa, integrando dados essenciais em tempo real.
+                            Com o banco de dados <em>zorp3r</em>, você tem controle total sobre, tudo em uma plataforma única e intuitiva.</p>
+                        </div>
+                        
+                    <button class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <span>Fazer login</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+
+                    <button class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <span>Cadastre-se</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div class="complemento-inicio">
+                    <img class="text" src="assets/img/complemento-esquerda.png" alt="">
+                    <img class="qr-code" src="assets/img/qr_code_rmdeveloper.png" alt="qr code para seu link bio">
+                </div>
+            </div>
+        </main>
+        <!--Fim Início-->
+
+        <!--Sobre-->
+        <section id="LOGIN" class="LOGIN">
+            <div class="container-login">
+                <!--Slide Sobre-->
+                <div class="headline-login" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="headline-scroll" id="headline-scroll">
+                        <span class="bold">LOGIN</span>
+                        <span class="divisor"></span>
+                        <span class="light">LOGIN</span>
+                        <span class="divisor"></span>
+                        <span class="bold">LOGIN</span>
+                        <span class="divisor"></span>
+                        <span class="light">LOGIN</span>
+                        <span class="divisor"></span>
+                        <span class="bold">LOGIN</span>
+                        <span class="divisor"></span>
+                        <span class="light">LOGIN</span>
+                        <span class="divisor"></span>
+                    </div>
+                </div>
+                
+                <div class="conteudo-login">
+                    <div class="left-login" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="textos-login">
+                            <h1>Bem-vindo!</h1>
+                            <p>Entre com suas credenciais para acessar o sistema.</p>
+                        </div>
+                        <form action="./login.php" method="POST">
+                            <div class="redes-sociais">
+                                <input type="email" placeholder="E-mail" name="email" required>
+                            </div>
+                            <div class="textbox">
+                                <input type="password" placeholder="Senha" name="senha" required>
+                            </div>
+                            <input type="submit" value="Entrar" class="btn-login">
+                        </form>
+            
+                    </div>
+                    <div class="right-login" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="imagem-login">
+                            <img src="assets/img/sua-foto.png" alt="">
+                        </div>
+                        <div class="complemento-login">
+                            <img src="assets/img/texto-giratorio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim Sobre-->
+
+    <!-- Formulário de Cadastro -->
+    <section id="cadastro" class="cadastro">
+        <div class="container-cadastro">
+            <div class="headline-sobre" data-aos="fade-up" data-aos-duration="1000">
+                <div class="headline-scroll" id="headline-scroll">
+                    <span class="bold">Cadastro</span>
+                    <span class="divisor"></span>
+                    <span class="light">Cadastro</span>
+                </div>
+            </div>
+
+            <div class="headline-cadastro" data-aos="fade-up" data-aos-duration="1000">
+                <div class="textos-sobre">
+                    <h1>Bem-vindo!</h1>
+                    <p>Crie uma conta para acessar o sistema.</p>
+                </div>
+
+                <div class="descricao-cadastro" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <!-- Formulário de Cadastro -->
+                    <form action="cadastro.php" method="POST">
+                        <!-- Campo Nome Completo -->
+                        <div class="redes-sociais">
+                            <input type="text" placeholder="Nome Completo" name="nome" required>
+                        </div>
+
+                        <!-- Campo E-mail -->
+                        <div class="textbox">
+                            <input type="email" placeholder="E-mail" name="email" required>
+                        </div>
+
+                        <!-- Campo Senha -->
+                        <div class="textbox">
+                            <input type="password" placeholder="Senha" name="senha" required>
+                        </div>
+
+                        <!-- Confirmação de Senha -->
+                        <div class="textbox">
+                            <input type="password" placeholder="Confirmar Senha" name="confirmar_senha" required>
+                        </div>
+
+                        <!-- Botão de Cadastro -->
+                        <input type="submit" value="Cadastrar" class="btn-login">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!--Contato-->
+        <section id="contato" class="contato">
+            <div class="container-contato" data-aos="fade-up" data-aos-duration="1000">
+                <div class="headline-contato" data-aos="fade-up" data-aos-delay="200">
+                    <div class="titulo-contato">
+                        <h1>Contato</h1>
+                    </div>
+                    <div class="descricao-contato">
+                        <ul class="lista-contato">
+                            <li><a href="#">WhatsApp: (55) 99999 - 9999</a></li>
+                            <li><a href="#">email@seuemail.com.br</a></li>
+                            <li><a href="#">Endereço Completo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="conteudo-contato" data-aos="fade-up" data-aos-delay="400">
+                    <div class="formulario-contato">
+                        <h2>Entre em contato</h2>
+                        <p>Qualquer dúvida estamos a disposição!</p>
+                        <form class="form">
+                            <input type="text" placeholder="Digite seu nome completo">
+                            <input type="phone" placeholder="(55) 22222-2222">
+                            <input type="email" placeholder="Seu melhor email">
+                            <textarea name="mensagem" id="mensagem" placeholder="Escreva o que você deseja aqui..."></textarea>
+                            <button class="btn">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="logo-contato" data-aos="fade-up" data-aos-delay="600">
+                        <img src="assets/img/imagem.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim Contato-->
+
+        <!--Footer-->
+        <footer class="footer" id="footer">
+            <div class="container-footer">
+                <div class="footer-column logo-column">
+                    <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+                </div>
+                <div class="footer-column menu-column">
+                    <nav class="footer-nav">
+                        <a href="#inicio">Início</a>
+                        <a href="#LOGIN">fazer login</a>
+                        <a href="#cadastro">Cadastrar</a>
+                        <a href="#contato">Contato</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-column credits-column">
+                <p>&copy; 2024 Todos os direitos reservados.</p>
+                <p>Desenvolvido por ADM│Devs.</p>
+            </div>
+        </footer>
+        <!--Fim Footer-->
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Inicialização do AOS -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!--JavaScript-->
+    <script src="header.js"></script>
+    <script src="actionButton.js"></script>
+    <script src="menu.js"></script>
+    <script src="assets/js/slideSobre.js"></script>
+    <script src="assets/js/slidePortfolio.js"></script>
+
+</body>
+
+</html>

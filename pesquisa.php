@@ -78,6 +78,6 @@ if (isset($_GET['tabela'])) {
     <?php endif; ?>
 
     <br>
-    <a href="home.php">Voltar à Home</a>
+    <a href="./logout.php">Voltar a pagína inicial</a>
 </body>
 </html>

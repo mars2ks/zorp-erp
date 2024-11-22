@@ -1,0 +1,215 @@
+/* Ajustes gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Defina uma fonte global */
+    background-color: #1e2a47; /* Cor de fundo */
+    color: var(--color-white);
+}
+
+/* Estilo para o header fixo no topo */
+.header {
+    user-select: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 2rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    transition: top 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, .9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Container de início centralizado */
+.container-inicio {
+    width: 100%;
+    height: 65vh;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* Estilos do título */
+.titulo-inicio {
+    font-size: clamp(2rem, 6vw, 3.5rem); /* Aumenta o tamanho do título conforme a tela */
+    font-family: var(--font-grande);
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.destaque-inicio {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: var(--color-gray2);
+    margin-top: 1rem;
+}
+
+/* Parágrafo de boas-vindas */
+.paragrafo-inicio p {
+    font-size: clamp(1.2rem, 2.5vw, 2rem); /* Ajuste dinâmico de fonte */
+    max-width: 900px;
+    color: var(--color-gray2);
+    margin-top: 1rem;
+    font-family: var(--font-pequena);
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+/* Layout de skills - Centralizado */
+.skills {
+    width: 100%;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Centraliza as skills */
+}
+
+.container-skills {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste da grid das skills */
+.conteudo-skills {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+    grid-template-columns: 1fr; /* Começa com uma coluna por padrão */
+    align-items: start;
+}
+
+/* Box de skills */
+.box-skills {
+    border: 1px solid hsla(0, 0%, 100%, 0.15);
+    border-radius: 20px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    padding: 2rem;
+    gap: 1.5rem;
+    background-color: #2c3e50; /* Cor de fundo das caixas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação no hover */
+}
+
+/* Ícone das skills */
+.box-skills i {
+    font-size: 4rem;
+    color: var(--color-white);
+}
+
+/* Descrição da box */
+.box-skills p {
+    color: var(--color-gray2);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Efeito de hover para as caixas */
+.box-skills:hover {
+    transform: translateY(-5px); /* Eleva a caixa quando o mouse passa por cima */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Responsividade para telas médias */
+@media (min-width: 600px) {
+    .conteudo-skills {
+        grid-template-columns: repeat(2, 1fr); /* Exibe 2 colunas em telas médias */
+    }
+}
+
+/* Responsividade para telas grandes */
+@media (min-width: 900px) {
+    .conteudo-skills {
+        grid-template-columns: repeat(3, 1fr); /* Exibe 3 colunas em telas grandes */
+    }
+}
+
+/*************** FOOTER *****/
+.footer {
+    background-color: var(--color-black);
+    width: 100%;
+    padding: 3rem 1rem;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container-footer {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-column {
+    align-items: flex-start;
+}
+
+.logo-column img {
+    width: 100px;
+}
+
+.menu-column {
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--color-destaque1);
+}
+
+
+.credits-column {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.credits-column p {
+    margin: 0.2rem 0;
+}

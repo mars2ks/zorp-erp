@@ -18,6 +18,8 @@ $usuario_nome = $_SESSION['usuario_nome'];  // Nome do usuário logado
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Zorp</title>
     <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="./responsividade.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -41,47 +43,46 @@ $usuario_nome = $_SESSION['usuario_nome'];  // Nome do usuário logado
 </main>
 <!-- Fim Início -->
 
-<!-- Skills -->
-<section id="skills" class="skills">
+<!-- Skills --><section id="skills" class="skills">
     <div class="container-skills" data-aos="fade-up" data-aos-duration="1000">
         <div class="conteudo-skills">
 
-            <a href="./relatorio.php" class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                <h3>Relatório de Compras</h3>
+            <!-- Card 1: Relatório de Compras -->
+            <div class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <a href="./relatorio.php">
+                    <i class="bi bi-file-earmark-bar-graph"></i> <!-- Ícone de gráfico de barras para Relatório -->
+                    <h3>Relatório de Compras.</h3>
+                </a>
                 <p>Visualize o valor das compras realizadas por cada fornecedor.</p>
-            </a>
+            </div>
 
-            <a href="./produtos.php" class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                <i class="bi bi-palette"></i>
-                <h3>Busca e venda de produtos.</h3>
+            <!-- Card 2: Busca e venda de produtos -->
+            <div class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <a href="./produtos.php">
+                    <i class="bi bi-search"></i> <!-- Ícone de pesquisa -->
+                    <h3>Busca e venda de produtos.</h3>
+                </a>
                 <p>Recupere todas as vendas realizadas por um IdUsuario.</p>
-            </a>
+            </div>
 
-            <a href="./compras.php" class="box-skills" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                <i class="bi bi-book"></i>
-                <h3>Registro de Compras.</h3>
+            <!-- Card 3: Registro de Compras -->
+            <div class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <a href="./compras.php">
+                    <i class="bi bi-cart-plus"></i> <!-- Ícone de adicionar ao carrinho -->
+                    <h3>Registro de Compras.</h3>
+                </a>
                 <p>Inserir um novo registro em Compra e CompraProdutoFornecedor, garantindo que ambas as operações sejam concluídas.</p>
-            </a>
-
+            </div>
+            
         </div>
     </div>
 </section>
-<!-- Fim Skills -->
+<!-- Fim Skill -->
+
+<!-- Fim Skill -->
+
 
 <footer class="footer" id="footer">
-    <div class="container-footer">
-        <div class="footer-column logo-column">
-            <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
-        </div>
-        <div class="footer-column menu-column">
-            <nav class="footer-nav">
-                <a href="#inicio">Início</a>
-                <a href="#LOGIN">fazer login</a>
-                <a href="#cadastro">Cadastrar</a>
-                <a href="#contato">Contato</a>
-            </nav>
-        </div>
-    </div>
     <div class="footer-column credits-column">
         <p>&copy; 2024 Todos os direitos reservados.</p>
         <p>Desenvolvido por ADM│Devs.</p>

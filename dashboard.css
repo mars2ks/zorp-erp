@@ -1,14 +1,25 @@
-/* Ajustes gerais */
+@import url('https://fonts.cdnfonts.com/css/tt-hoves-pro-trial');
+@import url('clash-grotesk.css');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --font-grande: 'TT Hoves Pro Trial', sans-serif;
+    --font-pequena: 'ClashGrotesk-Light', sans-serif;
+    --color-black: #000;
+    --color-gray1: #3d4143;
+    --color-gray2: #9c9d9d;
+    --color-white: #f6f6f6;
+    --color-destaque1: #e7fc00;
+    --color-destaque2: #728e6f;
+}
+
 body {
-    font-family: Arial, sans-serif; /* Defina uma fonte global */
-    background-color: #1e2a47; /* Cor de fundo */
-    color: var(--color-white);
+    font-family: var(--font-pequena); /* Defina uma fonte global */
 }
 
 /* Estilo para o header fixo no topo */
@@ -33,6 +44,7 @@ body {
     width: 100%;
     height: 65vh;
     color: var(--color-white);
+    background-color: var(--color-black);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,10 +55,10 @@ body {
 
 /* Estilos do título */
 .titulo-inicio {
-    font-size: clamp(2rem, 6vw, 3.5rem); /* Aumenta o tamanho do título conforme a tela */
+    font-size: clamp(2rem, 6vw, 2.5rem); /* Aumenta o tamanho do título conforme a tela */
     font-family: var(--font-grande);
     font-weight: bold;
-    color: var(--color-white);
+    color: #f6f6f6;
 }
 
 .destaque-inicio {
@@ -70,8 +82,9 @@ body {
 
 /* Layout de skills - Centralizado */
 .skills {
+    background-color: var(--color-black);
     width: 100%;
-    padding: 0rem 1rem;
+    padding: 0rem 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +92,7 @@ body {
 }
 
 .container-skills {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,13 +102,14 @@ body {
 /* Ajuste da grid das skills */
 .conteudo-skills {
     display: grid;
-    gap: 2rem;
-    width: 100%;
+    gap: 5rem;
+    width: 95%;
     grid-template-columns: 1fr; /* Começa com uma coluna por padrão */
     align-items: start;
 }
 
 /* Box de skills */
+
 .box-skills {
     border: 1px solid hsla(0, 0%, 100%, 0.15);
     border-radius: 20px;
@@ -106,14 +120,30 @@ body {
     height: 450px;
     padding: 2rem;
     gap: 1.5rem;
-    background-color: #2c3e50; /* Cor de fundo das caixas */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação no hover */
 }
+
+
+/* Container da box (card) */
+
 
 /* Ícone das skills */
 .box-skills i {
     font-size: 4rem;
     color: var(--color-white);
+    margin-bottom: 10rem; /* Espaço entre o ícone e o título */
+}
+
+/* Título da box */
+.box-skills h3 {
+    font-size: 2.0rem;
+    color: var(--color-white); /* Garantir que o título tenha a cor branca */
+}
+
+/* Link da box */
+.box-skills a {
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 /* Descrição da box */
@@ -122,6 +152,11 @@ body {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.4;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 10em;
+    unicode-bidi: isolate;
+
 }
 
 /* Efeito de hover para as caixas */

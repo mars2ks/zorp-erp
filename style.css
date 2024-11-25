@@ -568,18 +568,126 @@ a {
 }
 
 /*************** SERVIÇOS *****/
-.cadastro {
-    background-color: var(--color-white);
-    width: 100vw;
-    height: 100%;
+/* Estilos para o Formulário */
+#cadastro {
+    width: 420px;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borda sutil */
+    backdrop-filter: blur(20px); /* Efeito de desfoque */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 30px 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff; /* Cor do texto */
+    font-family: var(--font-grande);
+    margin-top: 5%; /* Para centralizar um pouco o formulário */
 }
 
+#cadastro h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    text-align: center;
+    color: var(--color-white); /* Cor branca para o título */
+    margin-bottom: 1.5rem;
+}
+
+#cadastro p {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 2rem;
+}
+
+/* Caixa do Formulário */
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Campos de Entrada */
+.input-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.input-field i {
+    color: #fff; /* Cor do ícone */
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo translúcido */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Borda sutil */
+    border-radius: 5px; /* Bordas arredondadas */
+    color: #fff; /* Cor do texto */
+    outline: none;
+    transition: border-color 0.3s ease-in-out; /* Transição suave para o foco */
+}
+
+.input-field input:focus {
+    border-color: var(--color-gray1); /* Cor de foco */
+}
+
+.input-field input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Cor dos placeholders */
+}
+
+/* Estilo do Botão */
+.btn-login {
+    padding: 1rem;
+    background-color: var(--color-destaque2); /* Cor de fundo do botão */
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+    width: 100%; /* Botão ocupa toda a largura do formulário */
+}
+
+.btn-login:hover {
+    background-color: var(--color-destaque2); /* Cor de fundo no hover */
+}
+
+/* Animações de AOS */
+[data-aos="fade-up"] {
+    animation-name: fadeUp;
+    animation-duration: 1s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para .box */
+.box {
+    width: 420px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção de Cadastro */
 .container-cadastro {
-    background-color: var(--color-white);
+    backdrop-filter: blur(20px);
     width: 100%;
     max-width: 1400px;
     height: 100%;
@@ -679,6 +787,7 @@ a {
     color: var(--color-gray1);
     margin-bottom: -7px;
 }
+
 
 /*************** CONTATO *****/
 .contato {

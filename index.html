@@ -77,21 +77,23 @@
                             Com o banco de dados <em>zorp3r</em>, você tem controle total sobre, tudo em uma plataforma única e intuitiva.</p>
                         </div>
                         
-                    <button class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                        <span>Fazer login</span>
-                        <svg width="15px" height="10px" viewBox="0 0 13 10">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
+                        <a href="#LOGIN" class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <span>Fazer login</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </a>
+                        
 
-                    <button class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                        <span>Cadastre-se</span>
-                        <svg width="15px" height="10px" viewBox="0 0 13 10">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
+                        <a href="#cadastro" class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <span>Cadastre-se</span>
+                            <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                        </a>
+                        
                 </div>
                 <div class="complemento-inicio">
                     <img class="text" src="assets/img/complemento-esquerda.png" alt="">
@@ -152,54 +154,60 @@
         </section>
         <!--Fim Sobre-->
 
-    <!-- Formulário de Cadastro -->
-    <section id="cadastro" class="cadastro">
-        <div class="container-cadastro">
-            <div class="headline-sobre" data-aos="fade-up" data-aos-duration="1000">
-                <div class="headline-scroll" id="headline-scroll">
-                    <span class="bold">Cadastro</span>
-                    <span class="divisor"></span>
-                    <span class="light">Cadastro</span>
-                </div>
-            </div>
-
-            <div class="headline-cadastro" data-aos="fade-up" data-aos-duration="1000">
-                <div class="textos-sobre">
-                    <h1>Bem-vindo!</h1>
-                    <p>Crie uma conta para acessar o sistema.</p>
-                </div>
-
-                <div class="descricao-cadastro" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <!-- Formulário de Cadastro -->
-                    <form action="cadastro.php" method="POST">
-                        <!-- Campo Nome Completo -->
-                        <div class="redes-sociais">
-                            <input type="text" placeholder="Nome Completo" name="nome" required>
-                        </div>
-
-                        <!-- Campo E-mail -->
-                        <div class="textbox">
-                            <input type="email" placeholder="E-mail" name="email" required>
-                        </div>
-
-                        <!-- Campo Senha -->
-                        <div class="textbox">
-                            <input type="password" placeholder="Senha" name="senha" required>
-                        </div>
-
-                        <!-- Confirmação de Senha -->
-                        <div class="textbox">
-                            <input type="password" placeholder="Confirmar Senha" name="confirmar_senha" required>
-                        </div>
-
-                        <!-- Botão de Cadastro -->
-                        <input type="submit" value="Cadastrar" class="btn-login">
-                    </form>
-                </div>
+   <!-- Formulário de Cadastro -->
+<section id="cadastro" class="cadastro">
+    <div class="container-cadastro">
+        <div class="headline-sobre" data-aos="fade-up" data-aos-duration="1000">
+            <div class="headline-scroll" id="headline-scroll">
+                <span class="bold">Cadastro</span>
+                <span class="divisor"></span>
+                <span class="light">Cadastro</span>
             </div>
         </div>
-    </section>
+        
+        <!-- Caixa de Cadastro com Mensagem de Boas-Vindas -->
+        <div class="form-cadastro" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <!-- Mensagem de Boas-Vindas Dentro da Caixa de Cadastro -->
+            <div class="textos-sobre">
+                <h1>Bem-vindo!</h1>
+                <p>Crie uma conta para acessar o sistema.</p>
+            </div>
+            
+            <!-- Formulário de Cadastro -->
+            <form action="cadastro.php" method="POST">
+                <!-- Campo Nome Completo -->
+                <div class="input-field">
+                    <i class="bi bi-person"></i> <!-- Ícone de pessoa -->
+                    <input type="text" placeholder="Nome Completo" name="nome" required>
+                </div>
 
+                <!-- Campo E-mail -->
+                <div class="input-field">
+                    <i class="bi bi-envelope"></i> <!-- Ícone de envelope -->
+                    <input type="email" placeholder="E-mail" name="email" required>
+                </div>
+
+                <!-- Campo Senha -->
+                <div class="input-field">
+                    <i class="bi bi-lock"></i> <!-- Ícone de cadeado -->
+                    <input type="password" placeholder="Senha" name="senha" required>
+                </div>
+
+                <!-- Confirmação de Senha -->
+                <div class="input-field">
+                    <i class="bi bi-lock-fill"></i> <!-- Ícone de cadeado preenchido -->
+                    <input type="password" placeholder="Confirmar Senha" name="confirmar_senha" required>
+                </div>
+
+                <!-- Botão de Cadastro -->
+                <button type="submit" class="btn-login">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+            
+            
 
         <!--Contato-->
         <section id="contato" class="contato">
